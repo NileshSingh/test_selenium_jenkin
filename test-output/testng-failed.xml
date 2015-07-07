@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" name="Failed suite [TestSuite]" parallel="tests">
-  <parameter name="browser" value="Firefox"/>
-  <test name="ChromeTest(failed)" parallel="tests">
-    <parameter name="browser" value="Chrome"/>
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.testExample.firstTest">
+      <class name="com.testExample.alert">
         <methods>
-          <include name="testAction"/>
-          <include name="aftermethod"/>
-          <include name="aftermethod"/>
-          <include name="setup"/>
-          <include name="setup"/>
+          <include name="before"/>
+          <include name="testAlert"/>
+          <include name="after"/>
         </methods>
-      </class> <!-- com.testExample.firstTest -->
+      </class> <!-- com.testExample.alert -->
     </classes>
-  </test> <!-- ChromeTest(failed) -->
-</suite> <!-- Failed suite [TestSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
