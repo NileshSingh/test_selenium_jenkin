@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="2" name="Failed suite [TestSuite]" parallel="tests">
+  <parameter name="browser" value="Firefox"/>
+  <test name="FirefoxTest2(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
     <classes>
-      <class name="com.testExample.firstTest">
-        <methods>
-          <include name="testAction"/>
-        </methods>
-      </class> <!-- com.testExample.firstTest -->
-      <class name="com.testExample.testLoginPage">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-          <include name="testLoginPage"/>
-        </methods>
-      </class> <!-- com.testExample.testLoginPage -->
       <class name="com.testExample.alert">
         <methods>
           <include name="before"/>
@@ -22,6 +12,18 @@
           <include name="after"/>
         </methods>
       </class> <!-- com.testExample.alert -->
+      <class name="com.testExample.firstTest">
+        <methods>
+          <include name="aftermethod"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.testExample.firstTest -->
+      <class name="com.testExample.testLoginPage">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.testExample.testLoginPage -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- FirefoxTest2(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

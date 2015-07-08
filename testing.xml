@@ -6,7 +6,7 @@
  
 
  
-<test name="FirefoxTest">
+<test name="FirefoxTest1">
  
 <parameter name="browser" value="Firefox" />
  
@@ -20,13 +20,27 @@
  
 </test>
  
-<test name="FirefoxTest">
+<test name="FirefoxTest2">
  
 <parameter name="browser" value="Firefox" />
  
 <classes>
  
 <class name="com.testExample.alert">
+ 
+</class>
+ 
+</classes>
+ 
+</test>
+
+<test name="FirefoxTest3">
+ 
+<parameter name="browser" value="Firefox" />
+ 
+<classes>
+ 
+<class name="com.testExample.testLoginPage">
  
 </class>
  
