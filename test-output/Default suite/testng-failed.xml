@@ -10,6 +10,11 @@
           <include name="after"/>
         </methods>
       </class> <!-- com.testExample.alert -->
+      <class name="com.testExample.firstTest">
+        <methods>
+          <include name="testAction"/>
+        </methods>
+      </class> <!-- com.testExample.firstTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
