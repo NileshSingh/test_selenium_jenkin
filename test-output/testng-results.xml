@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" total="2" passed="0">
+<testng-results skipped="1" failed="2" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18064" started-at="2015-07-08T04:45:51Z" finished-at="2015-07-08T04:46:09Z">
+  <suite name="Default suite" duration-ms="30795" started-at="2015-07-08T06:07:10Z" finished-at="2015-07-08T06:07:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18064" started-at="2015-07-08T04:45:51Z" finished-at="2015-07-08T04:46:09Z">
+    <test name="Default test" duration-ms="30795" started-at="2015-07-08T06:07:10Z" finished-at="2015-07-08T06:07:41Z">
       <class name="com.testExample.alert">
-        <test-method status="PASS" signature="before()[pri:0, instance:com.testExample.alert@11b16a7]" name="before" is-config="true" duration-ms="10246" started-at="2015-07-08T10:15:51Z" finished-at="2015-07-08T10:16:02Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.testExample.alert@150dcd3]" name="before" is-config="true" duration-ms="4088" started-at="2015-07-08T11:37:32Z" finished-at="2015-07-08T11:37:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="FAIL" signature="testAlert()[pri:0, instance:com.testExample.alert@11b16a7]" name="testAlert" duration-ms="7651" started-at="2015-07-08T10:16:02Z" finished-at="2015-07-08T10:16:09Z">
+        <test-method status="FAIL" signature="testAlert()[pri:0, instance:com.testExample.alert@150dcd3]" name="testAlert" duration-ms="4535" started-at="2015-07-08T11:37:36Z" finished-at="2015-07-08T11:37:41Z">
           <exception class="org.openqa.selenium.NoAlertPresentException">
             <message>
               <![CDATA[No alert is present (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.13 seconds
+Command duration or timeout: 2.16 seconds
 Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
 System info: host: 'ada2-PC', ip: '10.129.151.22', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_79'
-Session ID: 14de9757-eef7-4ed8-8439-2a4185a88ada
+Session ID: c84d0a11-0b5f-4fa8-b4ca-d1074e69ecb5
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=13.0.1}]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoAlertPresentException: No alert is present (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.13 seconds
+Command duration or timeout: 2.16 seconds
 Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
 System info: host: 'ada2-PC', ip: '10.129.151.22', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_79'
-Session ID: 14de9757-eef7-4ed8-8439-2a4185a88ada
+Session ID: c84d0a11-0b5f-4fa8-b4ca-d1074e69ecb5
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=13.0.1}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -70,23 +70,105 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAlert -->
-        <test-method status="PASS" signature="after()[pri:0, instance:com.testExample.alert@11b16a7]" name="after" is-config="true" duration-ms="144" started-at="2015-07-08T10:16:09Z" finished-at="2015-07-08T10:16:09Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:com.testExample.alert@150dcd3]" name="after" is-config="true" duration-ms="235" started-at="2015-07-08T11:37:41Z" finished-at="2015-07-08T11:37:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- com.testExample.alert -->
+      <class name="com.testExample.testLoginPage">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testExample.testLoginPage@1f51d36]" name="beforeMethod" is-config="true" duration-ms="8280" started-at="2015-07-08T11:37:10Z" finished-at="2015-07-08T11:37:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="testLoginPage()[pri:0, instance:com.testExample.testLoginPage@1f51d36]" name="testLoginPage" duration-ms="13504" started-at="2015-07-08T11:37:19Z" finished-at="2015-07-08T11:37:32Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 10.17 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'ada2-PC', ip: '10.129.151.22', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_79'
+Session ID: 02713fe3-42a6-4309-9e88-abd6cee04130
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=13.0.1}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 10.17 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'ada2-PC', ip: '10.129.151.22', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_79'
+Session ID: 02713fe3-42a6-4309-9e88-abd6cee04130
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=13.0.1}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.testExample.testLoginPage.testLoginPage(testLoginPage.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'ada2-PC', ip: '10.129.151.22', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_79'
+Driver info: driver.version: unknown
+	at <anonymous class>.<anonymous method>(resource://fxdriver/modules/web-element-cache.js:8329)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/ada2/AppData/Local/Temp/anonymous1258460675779566786webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:7922)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/ada2/AppData/Local/Temp/anonymous1258460675779566786webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:8957)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/ada2/AppData/Local/Temp/anonymous1258460675779566786webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11618)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/ada2/AppData/Local/Temp/anonymous1258460675779566786webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/ada2/AppData/Local/Temp/anonymous1258460675779566786webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPage -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.testExample.testLoginPage@1f51d36]" name="afterMethod" is-config="true" duration-ms="127" started-at="2015-07-08T11:37:32Z" finished-at="2015-07-08T11:37:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.testExample.testLoginPage -->
       <class name="com.testExample.firstTest">
-        <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:com.testExample.firstTest@3f472b]" name="setup" is-config="true" duration-ms="0" started-at="2015-07-08T10:16:09Z" finished-at="2015-07-08T10:16:09Z">
+        <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:com.testExample.firstTest@cfc659]" name="setup" is-config="true" duration-ms="0" started-at="2015-07-08T11:37:41Z" finished-at="2015-07-08T11:37:41Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'browser' is required by @Configuration on method setup but has not been marked @Optional or defined
-in C:\Users\ada2\AppData\Local\Temp\testng-eclipse--1203979140\testng-customsuite.xml]]>
+in C:\Users\ada2\AppData\Local\Temp\testng-eclipse--1430558860\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'browser' is required by @Configuration on method setup but has not been marked @Optional or defined
-in C:\Users\ada2\AppData\Local\Temp\testng-eclipse--1203979140\testng-customsuite.xml
+in C:\Users\ada2\AppData\Local\Temp\testng-eclipse--1430558860\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParameters(Parameters.java:155)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:358)
 	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:86)
@@ -116,11 +198,11 @@ in C:\Users\ada2\AppData\Local\Temp\testng-eclipse--1203979140\testng-customsuit
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="testAction()[pri:0, instance:com.testExample.firstTest@3f472b]" name="testAction" duration-ms="1" started-at="2015-07-08T10:16:09Z" finished-at="2015-07-08T10:16:09Z">
+        <test-method status="SKIP" signature="testAction()[pri:0, instance:com.testExample.firstTest@cfc659]" name="testAction" duration-ms="1" started-at="2015-07-08T11:37:41Z" finished-at="2015-07-08T11:37:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAction -->
-        <test-method status="SKIP" signature="aftermethod()[pri:0, instance:com.testExample.firstTest@3f472b]" name="aftermethod" is-config="true" duration-ms="0" started-at="2015-07-08T10:16:09Z" finished-at="2015-07-08T10:16:09Z">
+        <test-method status="SKIP" signature="aftermethod()[pri:0, instance:com.testExample.firstTest@cfc659]" name="aftermethod" is-config="true" duration-ms="0" started-at="2015-07-08T11:37:41Z" finished-at="2015-07-08T11:37:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
