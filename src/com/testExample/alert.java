@@ -24,11 +24,12 @@ public class alert {
 		driver.get(baseuel);
 		
 		driver.findElement(By.linkText("LANGUAGE")).click();
-		//Alert a1 = driver.switchTo().alert();
-		//String s1 = a1.getText();
-		//a1.accept();
 		
-		//System.out.println("hiiii"+s1);
+		Alert a1 = driver.switchTo().alert();
+		String s1 = a1.getText();
+		a1.accept();
+		
+		System.out.println("hiiii"+s1);
 	}
 
 	@BeforeMethod

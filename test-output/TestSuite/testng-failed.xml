@@ -5,6 +5,13 @@
   <test name="FirefoxTest2(failed)" parallel="tests">
     <parameter name="browser" value="Firefox"/>
     <classes>
+      <class name="com.testExample.alert">
+        <methods>
+          <include name="before"/>
+          <include name="testAlert"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- com.testExample.alert -->
       <class name="com.testExample.firstTest">
         <methods>
           <include name="aftermethod"/>
@@ -17,13 +24,6 @@
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.testExample.testLoginPage -->
-      <class name="com.testExample.alert">
-        <methods>
-          <include name="before"/>
-          <include name="testAlert"/>
-          <include name="after"/>
-        </methods>
-      </class> <!-- com.testExample.alert -->
     </classes>
   </test> <!-- FirefoxTest2(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

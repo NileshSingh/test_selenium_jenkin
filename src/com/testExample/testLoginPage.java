@@ -43,7 +43,7 @@ public class testLoginPage {
     driver.findElement(By.id("submit")).click();
     driver.findElement(By.linkText("edit")).click();
     driver.findElement(By.id("new_name_field")).clear();
-    driver.findElement(By.id("new_name_field")).sendKeys("Shivaji");
+    driver.findElement(By.id("new_name_field")).sendKeys("Nilesh");
     driver.findElement(By.id("name_rationale_field")).clear();
     driver.findElement(By.id("name_rationale_field")).sendKeys("Real name");
     driver.findElement(By.cssSelector("fieldset > div.submit > #submit")).click();
